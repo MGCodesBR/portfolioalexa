@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+
+/* RESET */
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+html,
+body {
+   overflow-x: hidden;
+}
+
+html {
+   font-size: 10px; /* 1rem = 10px */
+   scroll-behavior: smooth;
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+/* PROJECT VARIABLES */
+:root {
+   /* fonts */
+   --first-font: "Poppins", sans-serif;
+   --size-font: 1.5rem;
+   --medium-font: 500;
+   --semi-font: 600;
+
+   /* colors */
+   --theme-color: 210; /* medium blue */
+
+   --first-color: hsl(var(--theme-color), 100%, 41%); /* #0069D1 */
+   --first-color-hover: hsl(var(--theme-color), 100%, 35);
+   --first-color-lighter: hsl(var(--theme-color), 50%, 85%);
+
+   --title-color: hsl(var(--theme-color), 8%, 15%);
+   --text-color: hsl(var(--theme-color), 8%, 45%);
+   --text-color-light: hsl(var(--theme-color), 8%, 65%);
+   --input-color: hsl(var(--theme-color), 70%, 96%);
+   --label-button: hsl(var(--theme-color), 100%, 10%);
+   --background-color: hsl(var(--theme-color), 60%, 100%);
+   --high-contrast: hsl(var(--theme-color), 100%, 100%);
+   --shadow-color: hsl(var(--theme-color), 10%, 90%);
+}
+
+/* PROJECT SETTINGS */
+body {
+   font-family: var(--first-font);
+   font-size: var(--size-font);
+   font-weight: var(--medium-font);
+   background-color: var(--background-color);
+   color: var(--text-color);
+   margin: 0;
+}
+
+/* DARK THEME COLOR */
+body.dark-theme {
+   --title-color: hsl(var(--theme-color), 8%, 95%);
+   --text-color: hsl(var(--theme-color), 8%, 75%);
+   --input-color: hsl(var(--theme-color), 29%, 16%);
+   --background-color: hsl(var(--theme-color), 28%, 12%);
+   --high-contrast: hsl(var(--theme-color), 100%, 100%);
+   --shadow-color: hsl(var(--theme-color), 10%, 25%);
+}
