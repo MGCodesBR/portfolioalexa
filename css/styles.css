@@ -148,6 +148,36 @@ body.dark-theme {
    fill: var(--high-contrast);
 }
 
+
+.section-title {
+   width: 100%;
+   text-align: center;
+   padding: 3.6rem 0;
+}
+
+.section-title > .title {
+   font-size: 2.4rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color); }
+
+   @media screen and (min-width: 1024px) {
+      .about > .section-title > .title {
+         font-size: 3.8rem;
+      }
+}
+
+.section-title > .subtitle {
+   display: block;
+   font-size: 1.3rem;
+   color: var(--text-color); }
+
+   @media screen and (min-width: 1024px) {
+      .about > .section-title > .subtitle {
+         font-size: 1.5rem;
+      }
+}
+
+
 /*=== REUSABLE COMPONENTS END ===*/
 
 
@@ -570,7 +600,114 @@ body.dark-theme {
       }
 }
 
-
-
 /*=== HOME END ===*/
 
+/*=== ABOUT START ===*/
+
+@media screen and (min-width: 1024px) {
+   .about > .container {
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+@media screen and (min-width: 610px) {
+   .about > .container > .about-photo {
+      width: 50%;
+      text-align: center;
+   }
+}
+.about > .container > .about-photo > picture > img {
+   border-radius: 1rem;
+   margin-bottom: 2rem; }
+
+   @media screen and (min-width: 1024px) {
+      .about > .container > .about-photo > picture > img {
+         width: 35.5rem;
+         height: auto;
+         text-align: center;
+      }
+}
+
+.about > .container > .about-content {
+   text-align: center; }
+
+   @media screen and (min-width: 610px) {
+      .about > .container > .about-content {
+         width: 50%;
+         padding: 0 1.5rem;
+      }      
+   }
+
+   @media screen and (min-width: 1024px) {
+      .about > .container > .about-content {
+         width: 40%;
+         padding: 0 2.4rem;
+      }      
+}
+
+.about > .container > .about-content > .description {
+   font-size: 1.5rem;
+   color: var(--text-color-light);
+   text-align: center;
+   margin-bottom: 3.6rem; }
+
+   @media screen and (min-width: 1024px) {
+      .about > .container > .about-content > .description {
+         font-size: 1.6rem;
+         text-align: left;
+      }      
+}
+
+.about > .container > .about-content > .about-numbers {
+   width: 100%;
+   display: flex;
+   margin-bottom: 6rem;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 0 2rem; }
+
+   @media screen and (min-width: 610px) {
+      .about > .container > .about-content > .about-numbers {
+         padding: 0;
+      }
+}
+
+.about > .container > .about-content > .about-numbers > .item {
+   display: block;
+   text-align: center;
+}
+
+.about > .container > .about-content > .about-numbers > .item > .value {
+   font-size: 2rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color); }
+
+   @media screen and (min-width: 1024px) {
+      .about > .container > .about-content > .about-numbers > .item > .value {
+         font-size: 2.4rem;
+      }
+}
+
+.about > .container > .about-content > .about-numbers > .item > .text {
+   font-size: 1.2rem;
+   color: var(--text-color); }
+
+   @media screen and (min-width: 1024px) {
+   .about > .container > .about-content > .about-numbers > .item > .text {
+         font-size: 1.4rem;
+      }
+}
+
+.about > .container > .about-content > .-download {
+   margin: 0 auto; }
+
+   @media screen and (min-width: 1024px) {
+      .about > .container > .about-content > .-download {
+         margin: 0;
+      }
+}
+   
+
+
+/*=== ABOUT END ===*/
