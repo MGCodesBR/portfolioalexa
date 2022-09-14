@@ -714,8 +714,6 @@ body.dark-theme {
 
 /*=== SKILLS START ===*/
 
-.skills {}
-
 .skills > .container {
    display: block; }
 
@@ -750,8 +748,6 @@ body.dark-theme {
          cursor: pointer;
       }
 }
-
-.skills > .container > .skill-accordion > .skill-button > .icon {}
 
 .skills > .container > .skill-accordion > .skill-button > .label {
    text-align: left;
@@ -861,7 +857,6 @@ body.dark-theme {
    width: 75%;
 }
 
-
 .skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-node::after {
    width: 60%;
 }
@@ -874,7 +869,6 @@ body.dark-theme {
 .skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-firebase:after {
    width: 50%;
 }
-
 
 .skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-photoshop::after {
    width: 80%;
@@ -890,3 +884,411 @@ body.dark-theme {
 }
 
 /*=== SKILLS END ===*/
+
+/*=== QUALIFICATION START ===*/
+
+.qualification > .container {
+   max-width: 40rem; }
+
+   @media screen and (min-width: 610px) {
+      .qualification > .container {
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+      }
+}
+
+.qualification > .container > .qualification-tabs {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 3rem;
+}
+
+.qualification > .container > .qualification-tabs > .qualification-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: var(--first-font);
+   font-weight: var(--semi-font);
+   font-size: 1.8rem;
+   color: var(--text-color-light);
+   padding: 1rem 0;
+   background-color: transparent; }
+
+   @media screen and (min-width: 1024px) {
+      .qualification > .container > .qualification-tabs > .qualification-button {
+         font-size: 2rem;
+      }
+}
+
+.qualification > .container > .qualification-tabs > .qualification-button > svg {
+   margin-right: 0.5rem;
+}
+
+.qualification > .container > .qualification-tabs > .qualification-button > svg path {
+   fill: var(--text-color-light);
+}
+
+.qualification > .container > .qualification-tabs > .qualification-button.-active {
+   color: var(--first-color);
+}
+
+.qualification > .container > .qualification-tabs > .qualification-button.-active > svg path {
+   fill: var(--first-color);
+}
+
+.qualification > .container > .qualification-content {
+   width: 100%;
+   display: none;
+}
+
+.qualification > .container > .qualification-content.-active {
+   display: block;
+}
+
+.qualification > .container > .qualification-content > .qualification-item {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr max-content 1fr;
+   column-gap: 1rem;
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-data {
+   padding-bottom: 0.4rem;
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-data > .title {
+   font-size: 1.5rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color); }
+
+   @media screen and (min-width: 1024px) {
+      .qualification > .container > .qualification-content > .qualification-item > .qualification-data > .title {
+         font-size: 1.6rem;
+      }      
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-data > .local {
+   font-size: 1.3rem;
+   color: var(--title-color-lighter); }
+
+   @media screen and (min-width: 1024px) {
+      .qualification > .container > .qualification-content > .qualification-item > .qualification-data > .local {
+         font-size: 1.4rem;
+      }      
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-data > .calendar {
+   font-size: 1.2rem;
+   color: var(--title-color-lighter);
+   margin-top: 1.2rem; }
+
+   @media screen and (min-width: 1024px) {
+      .qualification > .container > .qualification-content > .qualification-item > .qualification-data > .calendar {
+         font-size: 1.3rem;
+      }      
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-timeline {
+   position: relative;
+   padding: 0 2rem;
+}
+
+.qualification > .container > .qualification-content > .qualification-item > .qualification-timeline > .ball {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 1.5rem;
+   height: 1.5rem;
+   border-radius: 50%;
+   background-color: var(--first-color);
+}
+
+.qualification > .container > .qualification-content > .qualification-item:not(:last-child) > .qualification-timeline > .line {
+   display: block;
+   width: 0.2rem;
+   height: 100%;
+   background-color: var(--text-color);
+}
+
+/*=== QUALIFICATION END ===*/
+
+/*=== SERVICES START ===*/
+
+.services {}
+
+.services > .container {}
+
+.services > .container > .services-wrap {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 22rem);
+   column-gap: 2rem;
+   row-gap: 2.4rem; }
+
+   @media screen and (min-width: 610px) {
+      .services > .container > .services-wrap {
+         column-gap: 2.4rem;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap {
+         max-width: 80rem;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: 30rem;
+         margin: 0 auto;
+      }
+}
+
+.services > .container > .services-wrap > .service-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 5.7rem 2.5rem 2.5rem;
+   background-color: var(--background-color);
+   border-radius: 0.5rem;
+   box-shadow: 2px 2px 6px 3px var(--shadow-color); }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card {
+         padding: 11.8rem 4rem 4rem;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .card-icon > path {
+   fill: var(--first-color); }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .card-icon {
+         width: 2.5rem;
+         height: auto;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .card-title {
+   font-size: 1.8rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color); }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .card-title {
+         font-size: 2.1rem;
+      }
+}
+
+
+.services > .container > .services-wrap > .service-card > .card-button {
+   font-family: var(--first-font);
+   font-size: 1.3rem;
+   color: var(--first-color);
+   background-color: transparent; }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .card-button {
+         font-size: 1.5rem;
+         cursor: pointer;
+      }
+      .services > .container > .services-wrap > .service-card > .card-button > svg {
+         transform: translateX(0);
+         transition: transform .3s;
+      }
+      .services > .container > .services-wrap > .service-card > .card-button:hover > svg {
+         transform: translateX(30%);
+         transition: transform .3s;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .card-button > svg {
+   margin-left: 0.5rem;
+}
+
+
+.services > .container > .services-wrap > .service-card > .service-modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   scroll-behavior: auto;
+   background-color: rgba(35,35,35,0.8);
+   z-index: 999;
+   visibility: hidden;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal.-active {
+   visibility: visible;
+   opacity: 1;
+   scroll-behavior: unset;
+   overflow: hidden;
+   transition: all .3s ease-in-out;
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content {
+   width: 30.7rem;
+   height: 26.5rem;
+   border-radius: 1rem;
+   padding: 2.4rem 2rem 2.4rem 2.4rem;
+   background-color: var(--background-color); }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .service-modal > .modal-content {
+         width: 46.5rem;
+         height: 29rem;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .title {
+   display: inline-block;
+   font-size: 1.8rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color);
+   margin-bottom: 1.8rem; }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .title {
+         font-size: 2.1rem;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .modal-close {
+   display: block;
+   float: right;
+   padding: 0 0 2rem 2rem;
+   background-color: transparent;
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .service-list {
+   width: 100%;
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .service-list > .item {
+   font-size: 1.5rem;
+   font-weight: var(--medium-font);
+   line-height: 2.6;
+   color: var(--text-color-light); }
+
+   @media screen and (min-width: 1024px) {
+      .services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .service-list > .item {
+         font-size: 1.6rem;
+      }
+}
+
+.services > .container > .services-wrap > .service-card > .service-modal > .modal-content > .service-list > .item > .icon > path {
+   fill: var(--first-color);
+}
+
+/*=== SERVICES END ===*/
+
+
+/*=== PORTFOLIO START ===*/
+
+.portfolio {}
+
+.portfolio > .container {
+   margin-bottom: 6rem;
+}
+
+.portfolio > .container > .portfolio-carousel {}
+
+.portfolio > .container > .portfolio-carousel > .glide__track {
+   width: 26.6rem;
+   height: auto;
+   margin: 0 auto;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides {}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide {}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > picture {}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > picture > img {
+   width: 100%;
+   height: 100%;
+   max-width: 26.5rem;
+   max-height: 17.6rem;
+   border-radius: 1rem;
+   margin-bottom: 2rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > .portfolio-content {
+   width: auto;
+   max-width: 26.6rem;
+   padding-bottom: 4.2rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > .portfolio-content > .title {
+   font-size: 1.8rem;
+   font-weight: var(--semi-font);
+   color: var(--title-color);
+   margin-bottom: 0.8rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > .portfolio-content > .description {
+   font-size: 1.6rem;
+   font-weight: var(--medium-font);
+   color: var(--text-color-light);
+   margin-bottom: 3rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__track > .glide__slides > .glide__slide > .portfolio-content > .calltoaction {
+   padding: 1.6rem 2rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__arrows {
+   position: absolute;
+   width: 100%;
+   max-width: 40rem;
+   top: 45%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-45%);
+   text-align: center;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__arrows > .glide__arrow > path {
+   fill: var(--first-color);
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__bullets {
+   width: 100%;
+   height: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__bullets > .glide__bullet {
+   display: block;
+   width: 0.8rem;
+   height: 0.8rem;
+   border-radius: 50%;
+   text-align: center;
+   text-indent: -999rem;
+   background-color: var(--first-color-lighter);
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__bullets > .glide__bullet:not(:last-child) {
+   margin-right: 0.8rem;
+}
+
+.portfolio > .container > .portfolio-carousel > .glide__bullets > .glide__bullet:hover,
+.portfolio > .container > .portfolio-carousel > .glide__bullets > .glide__bullet--active {
+   background-color: var(--first-color);
+}
+/*=== PORTFOLIO END ===*/
