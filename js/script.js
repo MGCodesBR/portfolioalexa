@@ -10,3 +10,19 @@ $openMenu.addEventListener("click", () => {
 $closeMenu.addEventListener("click", () => {
    $mainNav.classList.remove("-active")
 })
+
+/* SKILLS BUTTONS */
+const $skillButtons = document.querySelectorAll(".skill-button")
+
+function selectSkill() {
+   let $skillActive = this
+   if ($skillActive.classList.contains("-active")) {
+      $skillActive.classList.remove("-active")
+   } else {
+      $skillActive.classList.add("-active")
+   }
+}
+
+$skillButtons.forEach((skillItem) => {
+   skillItem.addEventListener("click", selectSkill)
+})

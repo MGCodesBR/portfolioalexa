@@ -617,6 +617,7 @@ body.dark-theme {
       text-align: center;
    }
 }
+
 .about > .container > .about-photo > picture > img {
    border-radius: 1rem;
    margin-bottom: 2rem; }
@@ -708,6 +709,184 @@ body.dark-theme {
       }
 }
    
-
-
 /*=== ABOUT END ===*/
+
+
+/*=== SKILLS START ===*/
+
+.skills {}
+
+.skills > .container {
+   display: block; }
+
+   @media screen and (min-width: 1024px) {
+      .skills > .container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         align-items: flex-start;
+         padding: 4rem 0;
+      }
+}
+
+.skills > .container > .skill-accordion {
+   width: 100%;
+   max-width: 40rem;
+   margin: 0 auto;
+}
+
+.skills > .container > .skill-accordion > .skill-button {
+   font-family: var(--first-font);
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--background-color);
+   margin-bottom: 2rem; }
+
+   @media screen and (min-width: 1024px) {
+      .skills > .container > .skill-accordion > .skill-button {
+         cursor: pointer;
+      }
+}
+
+.skills > .container > .skill-accordion > .skill-button > .icon {}
+
+.skills > .container > .skill-accordion > .skill-button > .label {
+   text-align: left;
+   flex: 1;
+   margin-left: 1.6rem;
+}
+
+.skills > .container > .skill-accordion > .skill-button > .label > .title {
+   font-size: 1.8rem;
+   color: var(--text-color);
+   margin-bottom: 0.5rem; }
+
+   @media screen and (min-width: 1024px) {
+      .skills > .container > .skill-accordion > .skill-button > .label > .title {
+         font-size: 2.1rem;
+      }
+}
+
+.skills > .container > .skill-accordion > .skill-button > .label > .subtitle {
+   font-size: 1.3rem;
+   color: var(--text-color-light); }
+
+   @media screen and (min-width: 1024px) {
+      .skills > .container > .skill-accordion > .skill-button > .label > .subtitle {
+         font-size: 1.4rem;
+      }
+}
+
+.skills > .container > .skill-accordion > .skill-button > .chevron {
+   transition: all .3s ease-in-out;
+}
+
+.skills > .container > .skill-accordion > .skill-button.-active > .chevron {
+   transform: rotate(180deg);
+   transition: all .3s ease-in-out;
+}
+
+.skills > .container > .skill-accordion > .skill-content {
+   overflow: hidden;
+   height: 0;
+   padding-left: 4.5rem;
+   margin-bottom: 1.6rem;
+}
+
+.skills > .container > .skill-accordion > .skill-button.-active+.skill-content {
+   height: auto;
+   margin-top: 2rem;
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list {
+   width: 100%;
+   margin: 0;
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item {
+   margin-bottom: 2.5rem;
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-title {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   font-size: 1.5rem;
+   margin-bottom: 0.6rem; }
+
+   @media screen and (min-width: 1024px) {
+      .skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-title {
+         font-size: 1.6rem;
+      }
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-title > .name {
+   font-weight: var(--semi-font);
+   color: var(--text-color);
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-title > .value {
+   font-weight: var(--medium-font);
+   color: var(--text-color-light);
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar {
+   display: block;
+   width: 100%;
+   height: 0.6rem;
+   background-color: var(--first-color-lighter);
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar::after {
+   content: "";
+   display: block;
+   height: inherit;
+   background-color: var(--first-color);
+}
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-htmlcss::after {
+   width: 90%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-js::after {
+   width: 60%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-react::after {
+   width: 70%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-gatsby::after {
+   width: 75%;
+}
+
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-node::after {
+   width: 60%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-php::after {
+   width: 50%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-mongo::after {
+   width: 70%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-firebase:after {
+   width: 50%;
+}
+
+
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-photoshop::after {
+   width: 80%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-illustrator::after {
+   width: 70%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-figma::after {
+   width: 80%;
+}
+.skills > .container > .skill-accordion > .skill-content > .skill-list > .skill-item > .skill-bar.-sketch:after {
+   width: 55%;
+}
+
+/*=== SKILLS END ===*/
