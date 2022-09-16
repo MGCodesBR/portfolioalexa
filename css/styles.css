@@ -1375,3 +1375,127 @@ body.dark-theme {
 }
 
 /*=== PORTFOLIO END ===*/
+
+
+/*=== NEWPROJECT START ===*/
+
+.newproject {
+   background-color: var(--first-color);
+}
+
+.newproject > .container {
+   background-color: transparent;
+   padding: 4.6rem 2.4rem 0; }
+
+   @media screen and (min-width: 610px) {
+      .newproject > .container {
+         padding: 0 2.4rem;
+         align-items: flex-end;
+      }   
+   }
+
+   @media screen and (min-width: 1024px) {
+      .newproject > .container {
+         padding: 0;
+         max-width: 74rem;
+      }   
+}
+
+.newproject > .container > .newproject-content {
+   text-align: center;
+   padding-bottom: 5rem; }
+
+   @media screen and (min-width: 610px) {
+      .newproject > .container > .newproject-content {
+         width: 50%;
+         padding: 5rem 0 8rem;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .newproject > .container > .newproject-content {
+         text-align: left;
+         padding: 2rem 0 8rem;
+      }
+}
+
+.newproject > .container > .newproject-content > .title {
+   font-size: 2.4rem;
+   font-weight: var(--semi-font);
+   color: var(--high-contrast);
+   margin-bottom: 1rem; }
+
+   @media screen and (min-width: 610px) {
+      .newproject > .container > .newproject-content > .title {
+         font-size: 2rem;
+         margin-bottom: 1.6rem;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .newproject > .container > .newproject-content > .title {
+         font-size: 2.5rem;
+         text-align: left;
+      }
+}
+
+.newproject > .container > .newproject-content > .subtitle {
+   display: block;
+   font-size: 1.5rem;
+   font-weight: var(--medium-font);
+   color: var(--high-contrast);
+   text-align: center;
+   padding-bottom: 2rem;
+   margin-bottom: 2rem; }
+
+   @media screen and (min-width: 610px) {
+      .newproject > .container > .newproject-content > .subtitle {
+         margin-bottom: 2.4rem;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .newproject > .container > .newproject-content > .subtitle {
+         font-size: 1.6rem;
+         text-align: left;
+      }
+}
+
+.newproject > .container > .newproject-content > .-newproject {
+   text-align: center;
+   color: var(--first-color);
+   margin: 0 auto;
+   background-color: var(--background-color); }
+
+   @media screen and (min-width: 1024px) {
+      .newproject > .container > .newproject-content > .-newproject {
+         background-color: var(--high-contrast);
+         margin-right: auto;
+         border: 1px solid transparent;
+         cursor: pointer;
+      }
+      .newproject > .container > .newproject-content > .-newproject:hover {
+         color: var(--high-contrast);
+         background-color: var(--first-color);
+         margin-right: auto;
+         border: 1px solid var(--high-contrast);
+      }
+}
+
+.newproject > .container > .newproject-content > .-newproject > svg path {
+   fill: var(--first-color); }
+   
+   @media screen and (min-width: 1024px) {
+      .newproject > .container > .newproject-content > .-newproject:hover > svg path {
+         fill: var(--high-contrast);
+      }      
+}
+
+.newproject > .container > .newproject-photo > picture {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+/*=== NEWPROJECT END ===*/
+
