@@ -84,3 +84,32 @@ new Glide($portfolioCarousel, {
    hoverpause: true,
    animationDuration: 1000
 }).mount()
+
+/* TESTIMONIAL CAROUSEL */
+
+const $testimonialCarousel = document.querySelector(".glide.testimonial-carousel")
+
+new Glide($testimonialCarousel, {
+   type: "carousel",
+   gap: 60,
+   startAt: 1,
+   perView: 2,
+   autoplay: 3000,
+   hoverpause: true,
+   animationDuration: 1000,
+   breakpoints: {
+      992: {
+         gap: 60,
+         perView: 1,
+         peek: {
+            before: 200,
+            after: 200
+         },
+      },
+      610: {
+         gap: 20,
+         perView: 1,
+      }
+   }
+}).mount()
+
