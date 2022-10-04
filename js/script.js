@@ -2,6 +2,7 @@
 const $openMenu = document.querySelector(".open-menu-button")
 const $mainNav = document.querySelector(".main-nav")
 const $closeMenu = document.querySelector(".close-menu-button")
+const $linksNav = document.querySelectorAll(".main-nav a")
 
 $openMenu.addEventListener("click", () => {
    $mainNav.classList.add("-active")
@@ -9,6 +10,12 @@ $openMenu.addEventListener("click", () => {
 
 $closeMenu.addEventListener("click", () => {
    $mainNav.classList.remove("-active")
+})
+
+$linksNav.forEach((linkNav) => {
+   linkNav.addEventListener("click", function() {
+      $mainNav.classList.remove("-active")
+   })
 })
 
 /* SKILLS BUTTONS */
@@ -30,6 +37,8 @@ $skillButtons.forEach((skillItem) => {
 /* QUALIFICATION TABS */
 const $tabQualification = document.querySelectorAll(".qualification-button")
 let $tabActive = document.querySelector(".qualification-button.-active")
+
+console.log("ACTIVE: ", $tabActive)
 
 function selectQualification(item) {
    item.preventDefault();
