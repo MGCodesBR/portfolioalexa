@@ -86,7 +86,6 @@ new Glide($portfolioCarousel, {
 }).mount()
 
 /* TESTIMONIAL CAROUSEL */
-
 const $testimonialCarousel = document.querySelector(".glide.testimonial-carousel")
 
 new Glide($testimonialCarousel, {
@@ -113,3 +112,72 @@ new Glide($testimonialCarousel, {
    }
 }).mount()
 
+/* SCROOL EVENT */
+const scrollEvent = () => {
+   const $header = document.querySelector(".header")
+   const $btnToTop = document.querySelector(".btn-totop")
+
+   if (this.scrollY >= 50) {
+      $header.classList.add("-scroll")
+   } else {
+      $header.classList.remove("-scroll")
+   }
+
+   if (this.scrollY >= 550) {
+      $btnToTop.classList.add("-visible")
+   } else {
+      $btnToTop.classList.remove("-visible")
+   }
+}
+
+window.addEventListener("scroll", scrollEvent)
+
+/* SMOOTH SCROLL SECTION ACTIVE */
+const $sections = document.querySelectorAll(".section[id]")
+
+let sectionActive = () => {
+   const $scroll_Y = window.pageYOffset
+
+   $sections.forEach(current => {
+      const $sectionHeight = current.offsetHeight
+      const $sectionTop = current.offsetTop - 50
+      $sectionId = current.getAttribute("id")
+
+      if ($scroll_Y > $sectionTop && $scroll_Y <= $sectionTop + $sectionHeight) {
+         document.querySelector(".main-nav a[href*=" + $sectionId + "]").classList.add("-active")
+      } else {
+         document.querySelector(".main-nav a[href*=" + $sectionId + "]").classList.remove("-active")
+      }
+   })
+}
+
+window.addEventListener("scroll", sectionActive)
+
+/* DARK/LIGHT THEME */
+const $themeButton = document.querySelector(".theme-button")
+const $body = document.body
+const $themeActive = window.localStorage.getItem("theme")
+
+if ($themeActive === "dark") {
+   $themeButton.classList.add("-dark-mode")
+   $body.classList.add("dark-theme")
+} else {
+   $themeButton.classList.remove("-dark-mode")
+   $body.classList.remove("dark-theme")
+}
+
+const toggleTheme = () => {
+   let $darkMode = document.querySelector(".-dark-mode")
+
+   if (!$darkMode) {
+      $themeButton.classList.add("-dark-mode")
+      $body.classList.add("dark-theme")
+      localStorage.setItem("theme", "dark")
+   } else {
+      $themeButton.classList.remove("-dark-mode")
+      $body.classList.remove("dark-theme")
+      localStorage.setItem("theme", "light")
+   }
+}
+
+$themeButton.addEventListener("click", toggleTheme)

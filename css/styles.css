@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 
-
 /* RESET */
 *,
 ::before,
@@ -78,7 +77,6 @@ body.dark-theme {
 }
 
 /*=== REUSABLE COMPONENTS START ===*/
-
 .section {
    width: 100vw;
    height: auto; }
@@ -148,7 +146,6 @@ body.dark-theme {
    fill: var(--high-contrast);
 }
 
-
 .section-title {
    width: 100%;
    text-align: center;
@@ -177,6 +174,37 @@ body.dark-theme {
       }
 }
 
+body > .btn-totop {
+   position: fixed;
+   bottom: 6rem;
+   right: 3rem;
+   width: 3.5rem;
+   height: 3.5rem;
+   border-radius: 1rem;;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--first-color);
+   opacity: 0.5;
+   z-index: 10;
+   transition: opacity .3s linear;
+}
+
+body > .btn-totop:hover {
+   opacity: 1;
+   transition: opacity .3s linear;
+}
+
+body > .btn-totop.-visible {
+   display: flex;
+}
+
+body > .btn-totop > img {
+   width: 2rem;
+   height: 2rem;
+}
+
+
 
 /*=== REUSABLE COMPONENTS END ===*/
 
@@ -193,9 +221,12 @@ body.dark-theme {
    z-index: 15; }
 
    @media screen and (min-width: 1024px) {
-      .header  {
+      .header {
          height: 5rem;
          top: 0;
+      }
+      .header.-scroll {
+         box-shadow: 0 2px 2px 0 var(--shadow-color);
       }
 }
 
@@ -276,6 +307,14 @@ body.dark-theme {
 }
 
 .header > .container > .theme-button > .light-mode {
+   display: none;
+}
+
+.header > .container > .theme-button.-dark-mode > .light-mode {
+   display: block;
+}
+
+.header > .container > .theme-button.-dark-mode > .dark-mode {
    display: none;
 }
 
@@ -1469,6 +1508,7 @@ body.dark-theme {
 
    @media screen and (min-width: 1024px) {
       .newproject > .container > .newproject-content > .-newproject {
+         color: var(--first-color);
          background-color: var(--high-contrast);
          margin-right: auto;
          border: 1px solid transparent;
