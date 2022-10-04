@@ -1617,10 +1617,6 @@ body.dark-theme {
 
 /*=== CONTACTME START ===*/
 
-.contactme {}
-
-.contactme > .container {}
-
 .contactme > .container > .contactme-contacts {
    width: 100%;
    margin-bottom: 4rem; }
@@ -1654,8 +1650,6 @@ body.dark-theme {
 .contactme > .container > .contactme-contacts > .contact > .icon > path {
    fill: var(--first-color);
 }
-
-.contactme > .container > .contactme-contacts > .contact > .data {}
 
 .contactme > .container > .contactme-contacts > .contact > .data > .title {
    font-size: 1.8rem;
@@ -1699,7 +1693,6 @@ body.dark-theme {
                               "submit .";
       }
 }
-
 
 .contactme > .container > .contactme-form > .contactme-field {
    width: 100%;
@@ -1758,9 +1751,161 @@ body.dark-theme {
       }
 }
 
-
-
-
-
 /*=== CONTACTME END ===*/
 
+/*=== FOOTER START ===*/
+
+.footer {
+   background-color: var(--first-color);
+   padding: 4rem 0; }
+
+   @media screen and (min-width: 1024px) {
+      .footer {
+         padding: 1.6rem 0;
+      }
+}
+
+@media screen and (min-width: 610px) {
+   .footer > .container {
+      align-items: flex-start;
+   }   
+}
+
+@media screen and (min-width: 1024px) {
+   .footer > .container {
+      padding: 0;
+   }   
+}
+
+.footer > .container > .section-title {
+   text-align: left;
+   margin-bottom: 4rem;
+   padding: 0; }
+
+   @media screen and (min-width: 610px) {
+      .footer > .container > .section-title {
+         padding-top: 1rem;
+      }
+}
+
+.footer > .container > .section-title > .title {
+   font-size: 2.4rem;
+   font-weight: var(--semi-font);
+   color: var(--high-contrast);
+   margin-bottom: 0.6rem; }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .section-title > .title {
+         font-size: 3.8rem;
+      }
+}
+
+.footer > .container > .section-title > .subtitle {
+   font-size: 1.3rem;
+   font-weight: var(--semi-font);
+   color: var(--first-color-lighter) }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .section-title > .subtitle {
+         font-size: 1.4rem;
+      }
+}
+
+
+.footer > .container > .footer-sitemap {
+   width: 100%;
+   text-align: left;
+   margin-bottom: 5rem;
+}
+
+.footer > .container > .footer-sitemap > .list {
+   list-style: none; }
+
+   @media screen and (min-width: 610px) {
+      .footer > .container > .footer-sitemap > .list {
+         width: 50%;
+         margin: 0 auto;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .footer-sitemap > .list {
+         width: 100%;
+         display: flex;
+      }
+}
+
+.footer > .container > .footer-sitemap > .list > .item {
+   padding: 1.6rem 0; }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .footer-sitemap > .list > .item {
+         cursor: pointer;
+         transition: .3s;
+      }
+      .footer > .container > .footer-sitemap > .list > .item:not(:first-child) {
+         margin-left: 3rem;
+      }
+      .footer > .container > .footer-sitemap > .list > .item:hover > .link {
+         color: var(--high-contrast);
+         transition: .3s;
+      }
+}
+
+.footer > .container > .footer-sitemap > .list > .item > .link {
+   font-size: 1.5rem;
+   font-weight: var(--medium-font);
+   color: var(--first-color-lighter); }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .footer-sitemap > .list > .item > .link {
+         font-size: 1.6rem;
+         transition: .3s;
+      }
+}
+
+
+.footer > .container > .footer-social {
+   width: 100%;
+   margin-bottom: 5rem;
+   padding: 1.6rem 0;
+}
+
+.footer > .container > .footer-social > .social {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center; }
+
+   @media screen and (min-width: 610px) {
+      .footer > .container > .footer-social > .social {
+         justify-content: flex-end;
+      }
+}
+
+.footer > .container > .footer-social > .social > .item {
+   margin-right: 3.2rem; }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .footer-social > .social > .item {
+         cursor: pointer;
+         transition: .3s;
+      }
+      .footer > .container > .footer-social > .social > .item:hover {
+         transform: scale(1.2);
+         transition: .3s;
+      }
+}
+
+.footer > .container > .footer-social > .social > .item > .link > svg path {
+   fill: var(--first-color-lighter); }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .container > .footer-social > .social > .item > .link > svg path {
+         fill: var(--high-contrast);
+         transition: .3s;
+      }
+}
+
+
+/*=== FOOTER END ===*/
