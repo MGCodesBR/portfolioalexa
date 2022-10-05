@@ -38,8 +38,6 @@ $skillButtons.forEach((skillItem) => {
 const $tabQualification = document.querySelectorAll(".qualification-button")
 let $tabActive = document.querySelector(".qualification-button.-active")
 
-console.log("ACTIVE: ", $tabActive)
-
 function selectQualification(item) {
    item.preventDefault();
    let $tabClicked = this;
