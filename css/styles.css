@@ -783,6 +783,10 @@ body > .btn-totop > img {
       }
 }
 
+.skills > .container > .skill-accordion > .skill-button > .icon path {
+   fill: var(--first-color);
+}
+
 .skills > .container > .skill-accordion > .skill-button > .label {
    text-align: left;
    flex: 1;
@@ -812,6 +816,10 @@ body > .btn-totop > img {
 
 .skills > .container > .skill-accordion > .skill-button > .chevron {
    transition: all .3s ease-in-out;
+}
+
+.skills > .container > .skill-accordion > .skill-button > .chevron path {
+   fill: var(--first-color);
 }
 
 .skills > .container > .skill-accordion > .skill-button.-active > .chevron {
@@ -1136,6 +1144,10 @@ body > .btn-totop > img {
 
 .services > .container > .services-wrap > .service-card > .card-button > svg {
    margin-left: 0.5rem;
+}
+
+.services > .container > .services-wrap > .service-card > .card-button > svg path {
+   fill: var(--first-color);
 }
 
 .services > .container > .services-wrap > .service-card > .service-modal {
