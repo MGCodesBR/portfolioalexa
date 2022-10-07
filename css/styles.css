@@ -1956,4 +1956,29 @@ body > .btn-totop > img {
       }
 }
 
+.footer > .credits {
+   width: 100%;
+   display: block;
+   text-align: center;
+   padding: 2rem 1rem;
+   font-size: 1.2rem;
+   color: var(--text-color-light);
+   font-weight: var(--medium-font);
+   background-color: transparent; }
+
+   @media screen and (min-width: 1024px) {
+      .footer > .credits {
+         padding: 5rem 0 0;
+      }
+}
+
+.footer > .credits > .link {
+   text-decoration: none;
+   color: var(--high-contrast);
+}
+
+.footer > .credits > span {
+   color: red;
+}
+
 /*=== FOOTER END ===*/
